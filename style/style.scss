@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+//varible
+$Darkcyan: hsl(185, 75%, 39%);
+$Verydarkesaturatedblue: hsl(229, 23%, 23%);
+$Dark4grayishblue: hsl(227, 10%, 46%);
+$Darkgray: hsl(0, 0%, 59%);
+
+$fontFamily:"Kumbh Sans";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Darkcyan;
+    background-image: url("../images/bg-pattern-top.svg"),url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+
+    background-position:  right 50vw bottom 50vh ,  left 50vw top 50vh;
+
+    .card{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 10px;
+        width: 22rem;
+        height: 22rem;
+        background-image: url("../images/bg-pattern-card.svg");
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        .footer{
+            border-top: 1px solid $Darkgray;
+            background-color: #fff;
+            height: 5rem;
+            border-radius:  0 0 10px 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }.mainContentContainer{
+            background-color: #fff;
+            height: 9.35rem;
+            
+            
+            
+        }.profileImage{
+            display: flex;
+            justify-content: center;
+            
+            img{
+                border-radius: 50px;
+                border: #fff 4px solid;
+                position: absolute;
+                margin-top: -3.2rem;
+
+            }
+        }.mainContent{
+            margin: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+}
+p,h1{
+display: block;
+font-family: "Kumbh Sans";
+font-weight: 700;
+}
+.main{
+    font-size: 18px;
+}.gray{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    margin-top: .6rem;
+}
+.secondary{
+    font-size: 12px;
+}
